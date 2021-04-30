@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./App.css";
-import { AiOutlineMail } from "react-icons/ai";
+import { AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
 import avatar from "./images/avatar.png";
 
 const userPrefersDark = localStorage.darkMode
@@ -22,7 +22,7 @@ function App() {
 					<span className="app__logo">
 						<AiOutlineMail />
 					</span>
-					<span> hi@sandrabullock.design</span>
+					<span className="app__heading-text"> hi@sandrabullock.design</span>
 				</h1>
 				<nav className="app__nav">
 					<ul className="app__nav-list">
@@ -31,6 +31,10 @@ function App() {
 						<li className="app__nav-item"> Services </li>
 						<li className="app__nav-item"> Contact </li>
 					</ul>
+
+					<button className="app__menu-btn">
+						<AiOutlineMenu size={30} />
+					</button>
 
 					<label className="switch">
 						<input
