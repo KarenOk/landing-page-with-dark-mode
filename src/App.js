@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import "./App.css";
 import { AiOutlineMail } from "react-icons/ai";
-import { FiSun } from "react-icons/fi";
-import { HiMoon } from "react-icons/hi";
 import avatar from "./images/avatar.png";
 
 const userPrefersDark = localStorage.darkMode
@@ -41,7 +39,7 @@ function App() {
 							defaultChecked={darkMode}
 							onChange={handleDarkModeToggle}
 						/>
-						<span className="slider round"></span>
+						<span className="slider round" />
 					</label>
 				</nav>
 			</header>
